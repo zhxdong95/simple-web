@@ -3,9 +3,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                checkout scm
-                //sh 'cd simple-web'
-                sh 'mvn --version'
+                //checkout scm
+                git url: 'https://github.com/zhxdong95/simple-web.git', branch: 'master'
+                sh 'cd simple-web'
+                //sh 'mvn --version'
                 //git 'https://github.com/zhxdong95/simple-web.git'
                 sh 'mvn clean package'
             }
