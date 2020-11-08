@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zhxd</groupId>
-    <artifactId>simpleweb</artifactId>
+    <artifactId>simple-web</artifactId>
     <version>1.0.0</version>
 
     <parent>

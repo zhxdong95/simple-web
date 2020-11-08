@@ -1,10 +1,10 @@
 pipeline {
-    agent {
+    agent any/*{
         docker {
             image 'maven:3.6.3'
             args '-v $HOME/.m2:/root/.m2'
         }
-    }
+    }*/
     stages {
         stage('build') {
             steps {
