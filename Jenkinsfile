@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'maven:3.6.3-ibmjava-alpine'
-            args '-v $HOME/.m2:/root/.m2'
+            //args '-v $HOME/.m2:/root/.m2'
         }
     }
     stages {
@@ -13,7 +13,7 @@ pipeline {
                 //sh 'cd simple-web'
                 //sh 'mvn --version'
                 //git 'https://github.com/zhxdong95/simple-web.git'
-                sh 'mvn -e clean package'
+                sh 'mvn -X clean package'
             }
         }
     }
