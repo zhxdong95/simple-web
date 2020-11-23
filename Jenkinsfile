@@ -8,6 +8,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'mkdir /.m2'
+                sh 'mkdir /.m2/repository'
                 //checkout scm
                 //git url: 'git://github.com/zhxdong95/simple-web.git', branch: 'main'
                 //sh 'cd simple-web'
