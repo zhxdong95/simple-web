@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'maven:3.6.3'
+            image 'maven:3.6.3-ibmjava-alpine'
             args '-u root -v $HOME/.m2:/root/.m2 -v /home/data/mvnRepository:/root/.m2/repository'
         }
     }
